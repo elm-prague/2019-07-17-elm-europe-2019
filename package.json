@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "mdx-deck --port 3030 src/index.js",
+    "ghpages": "node ./scripts/publish.js",
     "build": "run-s build:png build:pdf:* build:html",
     "build:html": "mdx-deck build src/index.js --html --basepath=/2019-07-17-elm-europe-2019",
     "build:png": "mdx-deck-export png src/index.js --port=8081 --out-file=presentation-preview.png",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "file-loader": "4.1.0",
+    "gh-pages": "2.0.1",
     "mdx-deck": "^2.5.1",
     "npm-run-all": "4.1.5",
     "prettier": "^1.18.2"
