@@ -9,8 +9,6 @@ import {
 // See all code highlighter styles: https://conorhastings.github.io/react-syntax-highlighter/demo/prism.html
 import { tomorrow as prismStyle } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 
-console.log('baseTheme', baseTheme);
-
 const customTheme = theme =>
   merge(theme, {
     colors: {
