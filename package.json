@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "mdx-deck --port 3030 src/index.js",
-    "build": "run-s build:pdf:* build:html",
+    "build": "run-s build:png build:pdf:* build:html",
     "build:html": "mdx-deck build src/index.js",
+    "build:png": "mdx-deck-export png src/index.js --port=8081 --out-file=presentation-preview.png",
     "build:pdf:16-9": "mdx-deck-export pdf src/index.js --port=8081 --width=960 --height=540 --out-file=presentation-16-9.pdf",
     "build:pdf:4-3": "mdx-deck-export pdf src/index.js --port=8081 --width=960 --height=720 --out-file=presentation-4-3.pdf",
     "help": "mdx-deck",
