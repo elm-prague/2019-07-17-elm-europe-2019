@@ -22,7 +22,7 @@
     "@mdx-deck/themes": "^2.5.0",
     "@rebass/emotion": "3.1.1",
     "code-surfer": "2.0.0-alpha.9",
-    "lodash": "4.17.14",
+    "lodash": "4.17.19",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-syntax-highlighter": "11.0.2"
